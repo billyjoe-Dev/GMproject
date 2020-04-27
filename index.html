@@ -1,41 +1,224 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>EPIC GOOGLE MAPS PROJECT</title>
-        <script src="js/store-data.js"></script>
-        <script src="js/index.js"></script>
-        <link rel="stylesheet" href="style/style.css">
-        <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
-    </head>
-    <body>
-        <div class="title">Store Locator</div>
-        <div class="search-container">
-            <div class="search">
-                <input id="zip-code-input" type="text" placeholder="Enter zip"/>
-                <i class="fas fa-search" onclick="searchStores()"></i>
-            </div>
-        </div>
-        <div class="stores-list-container">
-            <div class="stores-list">
-                <div class="store-container">
-                    <div class="store-info-container">
-                        <div class="store-address">
-                            <span>8480 Beverly Blvd</span>
-                            <span>Los Angeles, CA 90048</span>
-                        </div>
-                        <div class="store-phone-number">345-289-5434</div>
-                    </div>
-                    <div class="store-number-container">
-                        <div class="store-number">
-                            1
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="map"></div>
-        <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
-        </script>
-    </body>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1" />
+	<title>Portfolio Bradfield Phillips</title>
+	<script src="bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+	<link rel="stylesheet" href="bower_components/foundation-sites/dist/css/foundation.min.css">
+	<link rel="stylesheet" href="">
+	<script src="bower_components/foundation-sites/dist/js/foundation.min.js" charset="utf-8"></script>
+	<script src="bower_components/normalize-css/normalize.css" charset="utf-8"></script>
+	<script src="bower_components/typed.js/dist/typed.min.js" charset="utf-8"></script>
+	<script src="bower_components/jqcloud2/dist/jqcloud.min.js" charset="utf-8"></script>
+	<link rel="stylesheet" href="bower_components/jqcloud2/dist/jqcloud.min.css">
+	<script src="bower_components/custombox/dist/custombox.min.js"></script>
+	<link href="bower_components/custombox/dist/custombox.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500" rel="stylesheet">
+	<link rel="stylesheet" href="assets/fonts/foundation-icons/foundation-icons.css">
+	<link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+
+<body>
+	<!-- Watch how to use it on YouTube -->
+	<!-- https://youtu.be/ddLuZXs8Uyw -->
+
+
+	<!-- Watch how to deploy it live -->
+	<!-- https://youtu.be/E1dqffpUlMA -->
+	<div class="wrapper">
+		
+
+		<section id="about">
+			<div class="row">
+				<div class="small-12 large-8 large-offset-2 columns text-center">
+					<div class="profile-photo" style="background-image: url(assets/images/profile.JPG);">
+					</div>
+					<div class="details">
+						<h2>Hi, I'm Bradfield.<br> <span id="writing-text"><span></h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-12 column">
+					<div class="cta text-center">
+						<a class="my-button cta-button expand form-button" href="mailto:bjlphillips91@icloud.com">Get In Touch</a>
+					</div>
+				</div>
+				<div class="small-12 column">
+					<div class="my-arrow-div text-center">
+						<a href="https://github.com/billyjoe-Dev"><i class="fa fa-github-alt fa-2x"></i></a>
+						<a href="https://www.instagram.com/b_jl_p"><i class="fa fa-instagram fa-2x"></i></a>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+
+		<section id="experience">
+
+			<div class="row column">
+				<div class="small-12">
+					<h2 class="text-center">My Experience</h2>
+					<p class="text-center tag-line">System Administrator</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-12 medium-4 columns text-center experience-topics">
+					<i class="fi-laptop"></i>
+					<h3>Front-end (Practiced)</h3>
+					<ul>
+						<li>html(5)</li>
+						<li>css(3)</li>
+
+						<h3>Back-end (Greenhorn)</h3>
+
+						<li>C#</li>
+						<li>SQL</li>
+						<li>Python</li>
+						<li>Javascript</li>
+
+					</ul>
+				</div>
+				<div class="small-12 medium-4 columns text-center experience-topics">
+					<i class="fi-database"></i>
+					<h3>SysAdmin</h3>
+					<ul>
+						<li>Windows Platforms</li>
+						<li>Server</li>
+						<li>TCP/IP</li>
+						<li>Remote Mythologies</li>
+
+					</ul>
+				</div>
+				<div class="small-12 medium-4 columns text-center experience-topics">
+					<i class="fi-star"></i>
+					<h3>Tools</h3>
+					<ul>
+						<li>VM Horizon</li>
+						<li>Citrix</li>
+						<li>Visual Studio Code</li>
+						<li>Sublime Text</li>
+						<li>Azure DevOps</li>
+						<li>WordPress</li>
+						<li>Udemy</li>
+						<li>CS50 - Harvard</li>
+						
+
+					</ul>
+				</div>
+			</div>
+
+		</section>
+
+		<section id="work">
+			<h2 class="text-center">The beauty of software development</h2> 
+			<div class="row">
+				<p class="text-center tag-line">Something for the eye.</p>
+			</div>
+
+
+			<div class="row work-row"> <!-- odd -->
+				<div class="small-12 medium-6 medium-push-6 columns">
+					<img src="assets/images/project1.png" alt="">
+				</div>
+				<div class="small-12 medium-5 medium-pull-7 columns">
+					<div class="details details-ftm">
+						<h3>The beauty of Coding</h3>
+						<p class="platform">Web</p>
+						<p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i class="fi-mobile"></i></p>
+						<p>Sometimes all you need to do is to sit back and look carefully. Your eyes is the most powerfull tool.</p>
+						<a class="my-button" target="_blank" href="https://www.instagram.com/billyjoe.dev/">Visit Website</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="row work-row"> <!-- even -->
+				<div class="small-12 medium-6 columns">
+					<img src="assets/images/project2.png" alt="">
+				</div>
+				<div class="small-12 medium-5 medium-offset-1 columns">
+					<div class="details details-ftm">
+						<h3>Onelovefootball.net</h3>
+						<p class="platform">Web (Powered by WordPress)</p>
+						<p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i class="fi-mobile"></i></p>
+						<p>Our aim is to provide you with valuable, relevant football related content to supplement your footballing diet. Whether you support Bayern, Barca or Blackburn, we want to know what makes the game beautiful for you. With an ability to unite more than any other sport, despair can turn to elation and back in the space of seconds.</p>
+						<a class="my-button" target="_blank" href="https://onelovefootball.net/">Visit Website</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="row work-row"> <!-- odd -->
+				<div class="small-12 medium-6 medium-push-6 columns">
+					<img src="assets/images/project3.png" alt="">
+				</div>
+				<div class="small-12 medium-5 medium-pull-7 columns">
+					<div class="details details-ftm">
+						<h3>Workbench</h3>
+						<p class="platform">Web</p>
+						<p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i class="fi-mobile"></i></p>
+						<p>By keeping your desk neat and simple with a little bit of nature results to sophisticated Websites.</p>
+						<a class="my-button" target="_blank" href="https://myportfoliowebsitecleverp.imfast.io/developer-challenge-portfolio/">Visit Website</a>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+		</section>
+
+		<section id="teaching">
+			<h2 class="text-center">Hobbies</h2>
+			<div class="row">
+				<div class="small-12 medium-8 medium-offset-2">
+					<p class="text-center tag-line">Here some activites I like doing in my free time...</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-12 medium-8 medium-offset-2 columns">
+					<div class="teaching-domains">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="footer-cta">
+			<h2 class="text-center">Wanna work with me?</h2>
+			<p></p>
+			<div class="row text-center">
+				<div class="small-12 medium-8 medium-offset-2 columns">
+					<p class="text-center">I'm currently available for work.</p>
+				</div>
+				<div class="small-12 columns" id="startButtonDiv">
+					<a class="my-button form-button" href="mailto:bjlphillips91@icloud.com">Start Now</a>
+				</div>
+			</div>
+		</section>
+
+		<footer id="footer">
+			<div class="row text-center">
+				<div class="small-12 medium-6 medium-offset-3 columns">
+					<p id="logo">BP</p>
+					<p id="copyright">Copyright &copy; 2017 | Bradfield  Phillips</p>
+				</div>
+			</div>
+		</footer>
+
+
+
+	</div>
+	<script src="assets/scripts/app.js" charset="utf-8"></script>
+</body>
+
 </html>
